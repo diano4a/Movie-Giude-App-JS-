@@ -1,0 +1,157 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    /* v1 bg */
+    background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+    /* v2 bg */
+    /* background-image: linear-gradient(to top, #09203f 0%, #537895 100%); */
+}
+
+.container {
+    font-style: 16px;
+    width: 90vw;
+    min-width: 600px;
+    padding: 48px 29px;
+    background-color: #201f28;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    box-shadow: 19px 32px 48px rgba(0, 0, 0, 0.2);
+}
+
+.search-container {
+    display: grid;
+    grid-template-columns:  9fr 3fr;
+    gap: 19px;
+
+}
+
+.search-container input, .search-container button {
+    font-style: 15px;
+    outline: none;
+    border-radius: 5px;
+}
+
+.search-container input {
+    background-color: transparent;
+    border: 1px solid #a0a0a0;
+    padding: 11px;
+    color: #ffffff;
+
+}
+
+.search-container input:focus{
+    border-color: #ffffff;
+}
+
+.search-container button {
+    background-color: #C5AFA4;
+    /* background-color: #F3E8EE; */
+    border: none;
+    cursor: pointer;
+}
+
+#result {
+    color: #ffffff;
+}
+
+.info {
+    position: relative;
+    display: grid;
+    grid-template-columns: 4fr 8fr;
+    align-items: center;
+    margin-top: 19px;
+}
+
+.poster {
+    width: 100%;
+}
+
+h2 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0 15px 0;
+}
+
+.rating img {
+    width: 19px;
+}
+
+.rating h4 {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.details {
+    display: flex;
+    font-size: 15px;
+    gap: 16px;
+    justify-content: center;
+    color: #a0a0a0;
+    margin: 10px 0;
+    font-weight: 300;
+}
+
+.genre {
+    display: flex;
+    justify-content: space-around;
+}
+
+.genre div {
+    border: 1px solid #a0a0a0;
+    font-size: 12px;
+    padding: 6px 26px;
+    border-radius: 6px;
+    font-weight: 300;
+}
+
+h3 {
+    font-weight: 500;
+    margin-top: 19px;
+}
+
+p {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 29px;
+    text-align: justify;
+    color: #a0a0a0;
+}
+
+.msg {
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        font-size: 14px;
+    }
+
+    .info {
+        grid-template-columns: 1fr;
+    }
+
+    .poster {
+        margin: auto;
+        width: auto;
+        max-height: 175px;
+    }
+}
